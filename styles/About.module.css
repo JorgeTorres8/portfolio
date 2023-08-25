@@ -71,7 +71,7 @@
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         row-gap: 3rem;
-        column-gap: 0;
+        column-gap: .5rem;
     }
 }
 

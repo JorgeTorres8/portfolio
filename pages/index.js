@@ -25,7 +25,7 @@ export default function Home({home, works}) {
             <div className={styles.text}>
               <p className="center">
                 Thanks for being here! obviously the goal of a portfolio is to show visitors your knowledge as a developer. 
-                The projects I've done throughout this learning process are as important as the portfolio you're looking at right now.
+                The projects I&apos;ve done throughout this learning process are as important as the portfolio you&apos;re looking at right now.
                 The listed projects have information of interest, including the link to their GitHub repository and some of them have a link
                 to the app demo, so you can test it.
               </p>

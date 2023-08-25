@@ -16,7 +16,7 @@ const Header = ({home}) => {
             <div className={styles.nav}>
               <Nav/>
               <div className={styles.description}>
-                <h1>Hi, I'm</h1>
+                <h1>Hi, I&apos;m</h1>
 
                 <ul>
                   <li>

@@ -1,7 +1,7 @@
 import * as React from 'react';
+import Image from 'next/image';
 import Popover from '@mui/material/Popover';
 import { Stack } from '@mui/material';
-import styles from '../styles/Technology.module.css'
 
 const Technology = ({technology}) => {
 
@@ -20,17 +20,19 @@ const Technology = ({technology}) => {
   const {alt, imgT, name} = technology;
 
   return (
-    <div className={styles.technology}>
+    <div>
       <Stack
         aria-owns={open ? 'mouse-over-popover' : undefined}
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        <img 
-          className={styles.icon}
+        <Image 
           src={imgT}
-          alt={alt}/>
+          alt={alt}
+          width={35}
+          height={35}
+          />
       </Stack>
         
       <Popover

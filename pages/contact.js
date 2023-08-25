@@ -40,7 +40,7 @@ const Contact = ({contact}) => {
             <div className={styles.meet}>
                 <div className='container reveal fade-bottom'>
                 
-                    <h2> <span className={styles.slope}>&#60;</span> Let's meet! <span className={styles.slope}> /&#62;</span></h2>
+                    <h2> <span className={styles.slope}>&#60;</span> Let&apos;s meet!{" "}<span className={styles.slope}>/&#62;</span></h2>
 
                     <p className="center">You can contact me by any of these ways, i will reply to you as soon as possible.</p>
 

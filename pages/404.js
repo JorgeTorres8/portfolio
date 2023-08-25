@@ -6,7 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { Button } from '@mui/material';
 import styles from '../styles/notFound.module.css'
 
-const notFound = () => {
+const NotFound = () => {
   const {activetheme} = usePortfolio();
   return (
     <div className={styles.notFound}>
@@ -19,4 +19,4 @@ const notFound = () => {
   )
 }
 
-export default notFound
+export default NotFound
