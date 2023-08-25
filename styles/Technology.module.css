@@ -1,0 +1,16 @@
+.technology img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    width: 100%;
+    height: 3rem;
+
+}
+@media(min-width: 768px) {
+    .icon {
+        width: 100%;
+        height: 3.5rem;
+    }
+}

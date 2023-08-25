@@ -1,0 +1,29 @@
+.button div {
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: .5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  transition-property: box-shadow, transform;
+}
+.button div:active {
+  transform: scale(.8);
+}
+.toggleButton {
+  border: 2px solid #7c7c7c;
+  background-color: var(--grey);
+  background: linear-gradient(to top, rgba(38, 38, 38, 0.8), #e6e6e6c4 25%, #ffffff 38%, #c5c5c5c4 63%, #f7f7f740 87%, rgba(38, 38, 38, 0.8));
+}
+.toggleButtonDark {
+  border: 2px solid var(--white);
+  background-color: rgb(103, 167, 113);;
+  box-shadow: 0px 0px 1px var(--light-blue) inset,
+  0px 0px 2px var(--light-blue) inset,
+  0px 0px 10px var(--light-blue) inset,
+  0px 0px 40px var(--light-blue),
+  0px 0px 100px var(--light-blue),
+  0px 0px 5px var(--light-blue);
+}

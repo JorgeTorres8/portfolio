@@ -1,0 +1,106 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+@media(min-width: 768px) {
+    .work{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5rem 0;
+        gap: 3rem;
+    }
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+/*.testimonials p { OJO 24/7
+    color: #d0cece;
+}*/
+
+.client {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.opinion {
+    font-style: italic;
+}
+.opinion span {
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.curve {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+  }
+
+.wrapper {
+    height: 30vh;
+    overflow-y: scroll;
+    width: 97%;
+    box-shadow: var(--black) 0px 2px 4px, var(--black) 0px 7px 13px -3px, var(--black) 0px -3px 0px inset;
+    border-radius: 1rem;
+}
+@media(min-width: 992px){
+    .wrapper {
+        height: 40vh;
+    }
+}
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 0 1rem 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+@media(min-width: 768px) {
+    .links{
+        flex-direction: row;
+    }
+} 
+
+.code {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+	transition: all .2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    background-color: #cbe1fa;
+    border-radius: 5rem;
+    padding: .8rem 1.5rem;
+    border: 2px solid var(--blue);
+}
+.code:hover {
+    transform: scale(.92);
+    cursor: pointer;
+}

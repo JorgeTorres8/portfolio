@@ -1,0 +1,9 @@
+.responsive{
+    width: 100%;
+    height: auto;
+    background-color: var(--grey);
+}
+
+.delete {
+    background-color: #e53434;
+}

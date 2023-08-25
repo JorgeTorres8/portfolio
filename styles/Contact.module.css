@@ -1,0 +1,94 @@
+.grid {
+    display: grid;
+    gap: 5rem
+}
+@media(min-width: 768px) {
+    .grid {
+        margin-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.meet h2{
+    color: var(--white);
+    text-align: center;
+    text-shadow: none;
+    animation: up 3s linear infinite;
+}
+.meet p{
+    color: var(--white);
+    font-weight: 500;
+}
+.meet span {
+    color: var(--light-blue);
+    text-shadow: 3px 0px 7px var(--light-purple), 
+    -3px 0px 7px var(--light-purple), 
+    0px 4px 7px var(--light-purple);
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--grey);
+    border: 3px solid #bdbcbc;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    transition: 0.5s;
+    transition-property: box-shadow, border;
+}
+@media(min-width: 768px) {
+    .icons {
+        padding: 1.5rem;  
+    }
+}
+.icons:hover {
+    box-shadow: 0 0 25px var(--light-blue);
+    border: 3px solid var(--light-purple);
+}
+.icons div {
+    transition: transform .4s;
+}
+.icons div:hover {
+    transform: scale(1.2);
+}
+.gmail {
+    cursor: pointer;
+}
+
+@keyframes up {
+    0% {
+    }
+  
+    50% {
+      transform: translateY(-20%);
+    }
+  
+    100% {
+    }
+}
+.prueba {
+    background-image: url(../public/img/contact_background.svg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10% 5%;
+    border-top-right-radius: 10% 5%;
+    margin-top: 3rem;
+}
+@media(min-width: 768px) {
+    .prueba {
+        margin-top: 0;  
+    }
+}

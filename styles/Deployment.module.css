@@ -1,0 +1,18 @@
+.group {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+@media(min-width: 768px) {
+    .group {
+        margin: 0;
+    }
+}
+.font {
+    margin: 0;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+}
