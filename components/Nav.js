@@ -71,7 +71,7 @@ const Nav = () => {
           {navigation.map((nav) => (
             <BottomNavigationAction
               key={nav.id}
-              label={nav.label}
+              /*label={nav.label}*/
               value={nav.value}
               icon={nav.icon}
               className={styles.label}
@@ -124,16 +124,18 @@ const Nav = () => {
                   }}
                 >
                   {navigation.map((nav) => (
-                    <MenuItem  
-                      key={nav.id}
-                      onClick={handleClose}
-                      className={styles.menu}
-                    >
-                      <div className={styles.item}>
-                        {nav.icon}
-                        <Link href={nav.url}>{nav.label}</Link>  
-                      </div>
-                    </MenuItem>
+                    <Link key={nav.id} href={nav.url}>
+                      <MenuItem  
+                        onClick={handleClose}
+                        className={styles.menu}
+                      >
+
+                        <div className={styles.item}>
+                          {nav.icon}
+                          <p>{nav.label}</p>
+                        </div>
+                      </MenuItem>
+                    </Link> 
                   ))}
                 </Menu>
               </>

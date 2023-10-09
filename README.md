@@ -12,7 +12,7 @@ Thank you for wanting to take a look at the code of my portfolio, i hope you lik
 
 * **[Linkedin](https://www.linkedin.com/in/jorge-torres8/ "jorge-torres8")**
 
-> **All my projects are in my portfolio, visit [jorgetorres.com](https://www.holajorge.com "Portfolio") for more information.** //TODO
+> **All my projects are in my portfolio, visit [jorgetorres.xyz](https://www.jorgetorres.xyz "Portfolio") for more information.**
 
 ---
 

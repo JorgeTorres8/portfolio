@@ -26,7 +26,7 @@ const actions = [
   { icon: <StarIcon fontSize='large' />, name: 'Favorites', url:"/favorites" },
   { icon: <PersonIcon fontSize='large' />, name: 'About', url:"/about" },
   { icon: <EmailIcon fontSize='large' />, name: 'Contact', url:"/contact" },
-  { icon: <PictureAsPdfIcon fontSize='large' />, name: 'Curriculum', url:"/" }, //TODO
+  { icon: <PictureAsPdfIcon fontSize='large' />, name: 'Curriculum', url:"/documents/Curriculum_Jorge_Torres.pdf" },
 ];
 
 const Dial = () => {

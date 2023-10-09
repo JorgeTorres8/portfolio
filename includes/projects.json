@@ -1,0 +1,393 @@
+[
+        {
+            "id": 1,
+            "name": "Quiosco App",
+            "description": "This application's design is inspired by the self-ordering kiosks of some restaurants and fast-food places.",
+            "url": "quiosco-app",
+            "summary": "I developed this application with Next.js in the Front-End, incorporating React Context, I used TailwindCSS Framework for the styles and for the Back-End the ORM Prisma",
+            "github": "https://github.com/JorgeTorres8/quioscoapp",
+            "deployment": null,
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692817744/project11a_196ebd5f34.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814048/project11_42a0423078.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692817797/project11b_3455276579.png",
+            "others": [
+                {
+                    "id": 52,
+                    "name": "Quiosco1.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818919/Quiosco1_215b69a966.png"
+                },
+                {
+                    "id": 53,
+                    "name": "Quiosco2.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818928/Quiosco2_f22ac54aaf.png"
+                },
+                {
+                    "id": 54,
+                    "name": "Quiosco3.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818934/Quiosco3_cff940d510.png"
+                },
+                {
+                    "id": 55,
+                    "name": "Quiosco4.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818941/Quiosco4_f2bc708f41.png"
+                }
+            ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 2,
+            "name": "Guitar-LA",
+            "description": "Guitar sales application with a blog section. It contains a wide variety of guitars that we can add to the cart calculating the subtotal to pay. We can edit the amount of guitars and even remove from our list any guitar that we no longer want to buy. The app will save all the information of your cart for future visits.",
+            "url": "guitar-la",
+            "summary": "This application is made with Next.js in the Front-End, the styles were made through CSS modules and for the Back-End the headless CMS Strapi was used",
+            "github": "https://github.com/JorgeTorres8/GuitarLA_Next",
+            "deployment": null,
+            "linkedid": null,
+            "Bgithub": "https://github.com/JorgeTorres8/GuitarLA_Strapi",
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818663/project5a_a6ffe5a7da.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692813722/project5_2b91dd30a6.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818672/project5b_94844a29ab.png",
+            "others": [
+                {
+                    "id": 48,
+                    "name": "GuitarLA1.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818718/Guitar_LA_1_017a1da60d.png"
+                },
+                {
+                    "id": 49,
+                    "name": "GuitarLA2.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818728/Guitar_LA_2_610e536f11.png"
+                },
+                {
+                    "id": 50,
+                    "name": "GuitarLA3.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818742/Guitar_LA_3_28cad47b89.png"
+                },
+                {
+                    "id": 51,
+                    "name": "GuitarLA4.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692818752/Guitar_LA_4_13c4e8c294.png"
+                }
+            ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 3,
+            "name": "Expense Control",
+            "description": "Control your expenses with this app. It works in the following way: Place a budget and when you spend in certain categories that the app offers you, your initial budget will be reduced by the amount of the expense previously placed. The objective of this app is to interactively show the user the expenses and the type of expenses that he or she has every day. The app will save all the data of your expense control for future visits.",
+            "url": "expense-control",
+            "summary": "It was made with React.js in the Front-End incorporating varieties of dependencies. The styles in this app are made with CSS",
+            "github": "https://github.com/JorgeTorres8/expense-control",
+            "deployment": "https://expense-control-app.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819105/project2a_0be71dd481.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814136/project2_19daa6584e.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819160/project2b_ef3e2c1984.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 4,
+            "name": "Appointment Control",
+            "description": "This application was designed to show and control veterinary appointments. It contains a form where the patient's data is entered and a section where such appointments are shown. The data entered will be saved in the app. If you log in again, the appointments that were already created will be displayed.",
+            "url": "appointment-control",
+            "summary": "Appointment control is designed with React.js in the Front-End and its styles with the TailwindCSS Framework",
+            "github": "https://github.com/JorgeTorres8/appointment-control",
+            "deployment": "https://appointment-control.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819267/project1a_0393aff758.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814306/project1_5ba94937e8.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819309/project1b_4a9b4319bb.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 5,
+            "name": "Drink Finder",
+            "description": "This application was made to find recipes for drinks or cocktails by searching for ingredients or categories provided by thecocktaildb API.",
+            "url": "drink-finder",
+            "summary": "Made with React.js in the Front-End incorporating React Context and the styles are made with the React Bootstrap library",
+            "github": "https://github.com/JorgeTorres8/drink-finder",
+            "deployment": "https://drink-finder-app.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819444/project10a_e2eb030450.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814395/project10_ba614eac6b.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819479/project10b_a6c83e4c5a.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 6,
+            "name": "Lyrics Finder",
+            "description": "Fill out the form by entering the name of the song and the artist or band. The application will consult the lyrics-plus.p.rapidapi API to obtain the lyrics you just searched for.",
+            "url": "lyrics-finder",
+            "summary": "Lyrics Finder is made with React.js in the Front-End, React Context was used and styling of this app is made with CSS",
+            "github": "https://github.com/JorgeTorres8/lyrics-finder",
+            "deployment": "",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819556/project7a_211b4aacd0.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814428/project7_0943a832f7.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819578/project7b_411c969905.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 7,
+            "name": "Crypto Quoter",
+            "description": "Convert cryptocurrencies with the currency of your choice, the application will make a call to the min-api.cryptocompare API and show you the results with fresh data of the desired cryptocurrency.",
+            "url": "crypto-quoter",
+            "summary": "This simple application is made in the Front-End with React.js, I used Custom Hooks and styled components were used for the styles",
+            "github": "https://github.com/JorgeTorres8/crypto-quoter",
+            "deployment": "https://crypto-quoter-app.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819665/project3a_7ec9dc0fbb.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814457/project3_450cdc8899.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819683/project3b_ba6f64657b.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 8,
+            "name": "Clima App",
+            "description": "Know the weather of the city of the desired country, the application will make a call to the openweathermap API and will show you the searched weather results.",
+            "url": "clima-app",
+            "summary": "Clima App is made with React.js in the Front-End, I used React Context and the styles of this application were made with CSS",
+            "github": "https://github.com/JorgeTorres8/climaap",
+            "deployment": "https://obtener-clima-app.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819797/project8a_fc7ccb3f21.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814528/project8_6b11932355.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819813/project8b_cc97aa81e5.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 9,
+            "name": "Cotizador Automóvil",
+            "description": "This application is designed to quote automobiles, it performs estimated calculations with simple mathematical operations to be able to quote cars by year, brand, basic or complete plan.",
+            "url": "cotizador-automovil",
+            "summary": "The Front-End made with React.js, I incorporated Context React and the styles of this app were made with the Tailwind CSS Framework",
+            "github": "https://github.com/JorgeTorres8/cotizador-automovil",
+            "deployment": "https://cotizador-automovil-app.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692819979/project6a_43b8af650e.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814558/project6_7629d37bdf.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820001/project6b_81c08d7c21.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 10,
+            "name": "Noticias App",
+            "description": "When you enter the app, the newsapi API is called to display general news related to your country. You can filter news by different categories. Unfortunately the API works locally, the Deployment cannot be done because the call is not reciprocated.",
+            "url": "noticias-api",
+            "summary": "This application is made with React.js in the Front-End, incorporated React Context and the Material UI library",
+            "github": "https://github.com/JorgeTorres8/noticias-api",
+            "deployment": null,
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820081/project9a_d8947721a0.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814595/project9_a4a9cc14f3.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820101/project9b_d767529899.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 11,
+            "name": "Administrador Clientes",
+            "description": "This app is used to add your clients, it fulfills the functions of CRUD (Create, Read, Update, Delete)",
+            "url": "administrador-clientes",
+            "summary": "For the Front-End, React.js was used, the form was made with the Formik library and the styles of this app were made with the TailwindCSS Framework. Created a FAKE rest API with json-server to save customer data",
+            "github": "https://github.com/JorgeTorres8/administrador-clientes",
+            "deployment": "https://administrador-clientes-app.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820198/project4a_0cd711b07e.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814642/project4_8951cae138.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820218/project4b_4009adb2fe.png",
+            "others": [ ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 12,
+            "name": "UpTask",
+            "description": "In UpTask you create projects that contain tasks, you can add users who will be collaborators in the project. The objective of this application is to have a detailed list of the jobs you have to do. Similar to Trello. You can create an account, login and recover your password, to do this i used Mailtrap, is a test tool and is not designed to send emails to real addresses.",
+            "url": "up-task",
+            "summary": "This app was developed with the MERN Stack. React.js in the Front-End with the use of React Context, the styles are made with the TailwindCSS framework and the Back-End with MongoDB for the NoSQL database, Express.js to create a server JS and Node.js as execution environment in JS.  I also used Socket.io for real-time events such as CRUD (Create, Read, Update, Delete) especially because a user can add another as a collaborator and the point is that that user knows instantly that he is a collaborator of a project",
+            "github": "https://github.com/JorgeTorres8/UpTask_MERN_frontend",
+            "deployment": null,
+            "linkedid": null,
+            "Bgithub": "https://github.com/JorgeTorres8/UpTask_MERN_backend",
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820321/project12a_7121212a1c.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814077/project12_b976638b49.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820346/project12b_c4d9f586e2.png",
+            "others": [
+                {
+                    "id": 77,
+                    "name": "UpTask1.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820383/Up_Task1_5e9fab3d9e.png"
+                },
+                {
+                    "id": 78,
+                    "name": "UpTask2.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820428/Up_Task2_1b776fe61e.png"
+                },
+                {
+                    "id": 79,
+                    "name": "UpTask3.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820470/Up_Task3_aade36284d.png"
+                },
+                {
+                    "id": 80,
+                    "name": "UpTask4.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692820479/Up_Task4_5b2641d776.png"
+                }
+            ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 13,
+            "name": "Mundo Lentes",
+            "description": "This is a website for an optics, where the user can find photos of the place and some advertising flyers of the company on Instagram. It has the location on Google maps and a form for patients/users to request an appointment, this form will send an email with the data to the staff in charge.",
+            "url": "mundo-lentes",
+            "summary": "It is made in WordPress, I used a template that this CMS offered me and modified it according to the client's requirements. To do this, I used plugins that allowed me to modify the base code of said template and with my knowledge I was able to carry out what the client requested",
+            "github": null,
+            "deployment": null,
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821071/project13a_f12f7801a1.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821038/project13_bbf3a7d52f.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821103/project13b_b61725889e.png",
+            "others": [
+                {
+                    "id": 87,
+                    "name": "mundo_lentes_2.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821262/mundo_lentes_2_c38aab8299.png"
+                }
+            ],
+            "technologies": [ ],
+            "deployments": [ ]
+        },
+        {
+            "id": 14,
+            "name": "DevWebCamp",
+            "description": "DevWebCamp is a web application for Conferences and Workshops where registered people can access in person or virtually making a payment through PayPal. Once the payment is made, they will choose up to 5 Conferences/Workshops to attend; It has an administration panel to create more events, speakers, gifts and view app statistics. Try it by accessing with the public user test12@test.com and his password password123",
+            "url": "dev-web-camp",
+            "summary": "You can create an account, login and recover your password, to do this i used Mailtrap, is a test tool and is not designed to send emails to real addresses. This web application is made with HTML5, CSS3, SASS, JS, MySql and PHP with the MVC architecture",
+            "github": "https://github.com/JorgeTorres8/DevWebCampMVC",
+            "deployment": "http://devwebcampjt.domcloud.io/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821429/project14a_b7ab9ce243.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814113/project14_28a0ef2b5d.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821466/project14b_e942bc5ea7.png",
+            "others": [
+                {
+                    "id": 90,
+                    "name": "DevWebCamp1.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821497/Dev_Web_Camp1_0beeed9145.png"
+                },
+                {
+                    "id": 91,
+                    "name": "DevWebCamp2.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821533/Dev_Web_Camp2_a59a8930fc.png"
+                },
+                {
+                    "id": 92,
+                    "name": "DevWebCamp3.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821598/Dev_Web_Camp3_2759345389.png"
+                },
+                {
+                    "id": 93,
+                    "name": "DevWebCamp4.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821641/Dev_Web_Camp4_62c73270a5.png"
+                },
+                {
+                    "id": 94,
+                    "name": "DevWebCamp5.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821679/Dev_Web_Camp5_7d8c54fc94.png"
+                },
+                {
+                    "id": 95,
+                    "name": "DevWebCamp6.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821706/Dev_Web_Camp6_b352596864.png"
+                },
+                {
+                    "id": 96,
+                    "name": "DevWebCamp7.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821730/Dev_Web_Camp7_f43e8308ad.png"
+                },
+                {
+                    "id": 97,
+                    "name": "DevWebCamp8.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821759/Dev_Web_Camp8_62c3cb018a.png"
+                },
+                {
+                    "id": 98,
+                    "name": "DevWebCamp9.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821782/Dev_Web_Camp9_db47f10b54.png"
+                }
+            ],
+            "technologies": [ ],
+            "deployments": [ ]
+            },
+        {
+            "id": 15,
+            "name": "Bienes Raices",
+            "description": "Web application for buying / renting houses and apartments with an administration panel to register sellers and properties",
+            "url": "bienes-raices",
+            "summary": "This web application is made with HTML5, CSS3, SASS, JS, MySql and PHP with the MVC architecture",
+            "github": "https://github.com/JorgeTorres8/BienesRaicesMVC",
+            "deployment": "https://demobienesraicesjorgetorres.netlify.app/",
+            "linkedid": null,
+            "Bgithub": null,
+            "background": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821932/project15a_f1254c51c0.png",
+            "img_1": "https://res.cloudinary.com/cloudjt8/image/upload/v1692814251/project15_39ce4fb3e6.png",
+            "img_2": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821959/project15b_aa7e4225ab.png",
+            "others": [
+                {
+                    "id": 101,
+                    "name": "BienesRaices1.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692821999/Bienes_Raices1_b0b583daa5.png"
+                },
+                {
+                    "id": 102,
+                    "name": "BienesRaices2.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692822028/Bienes_Raices2_31faea6344.png"
+                },
+                {
+                    "id": 103,
+                    "name": "BienesRaices3.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692822065/Bienes_Raices3_91b7ce888c.png"
+                },
+                {
+                    "id": 104,
+                    "name": "BienesRaices4.png",
+                    "url": "https://res.cloudinary.com/cloudjt8/image/upload/v1692822101/Bienes_Raices4_93cd985cc1.png"
+                }
+            ],
+            "technologies": [ ],
+            "deployments": [ ]
+        }
+    ]

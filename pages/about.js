@@ -24,13 +24,13 @@ const About = ({about}) => {
 
   const photoA = (
     <Paper sx={{ m: 2 }} elevation={4}>
-        <Image width={520} height={270} src={photo_1.url} alt='Natural landscape 1'/>
+        <Image width={520} height={270} src={photo_1} alt='Natural landscape 1' draggable="false"/> {/*photo_1.url */}
     </Paper>
   );
 
   const photoB = (
     <Paper sx={{ m: 2 }} elevation={4}>
-        <Image width={520} height={270} src={photo_2.url} alt='Natural landscape 2'/>
+        <Image width={520} height={270} src={photo_2} alt='Natural landscape 2' draggable="false"/> {/*photo_2.url */}
     </Paper>
   );
 
@@ -50,7 +50,7 @@ const About = ({about}) => {
               <p>This Guy?</p>
             </div>
             
-            <Image priority="true" width={400} height={600} src="/img/img_jorge_torres.png" alt="Jorge Torres image"/>
+            <Image priority="true" width={400} height={600} src="/img/img_jorge_torres.png" alt="Jorge Torres image" draggable="false"/>
 
             <div>
               <div className="reveal fade-name">
@@ -71,7 +71,7 @@ const About = ({about}) => {
         <Box className={styles.show}>
           <FormControlLabel
             control={<Switch checked={checked} onChange={handleChange} />}
-            label="Show"
+            label="SHOW"
             className={styles.label}
             sx={{mb:3, mt: 2, color: activetheme === 'dark' && 'var(--grey)'}}
           />
@@ -112,7 +112,8 @@ const About = ({about}) => {
 export async function getServerSideProps() {
 
 
-    const urlAbout = `${process.env.API_URL}/abouts`;
+    //const urlAbout = `${process.env.API_URL}/abouts`; strapi
+    const urlAbout = `${process.env.NEXT_PUBLIC_LOCAL_API_URL}/abouts`;
   
     const [resAbout, ] = await Promise.all([
       fetch(urlAbout)

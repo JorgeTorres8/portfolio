@@ -27,7 +27,8 @@ const Technology = ({technology}) => {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        <Image 
+        <Image
+          draggable="false"
           src={imgT}
           alt={alt}
           width={35}

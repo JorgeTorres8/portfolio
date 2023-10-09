@@ -3,7 +3,7 @@ import styles from '../styles/Header.module.css'
 import Nav from "./Nav";
 import Curriculum from './Curriculum';
 
-const Header = ({home}) => {
+const Header = ({home}) => { //{home} strapi
 
   const {animation} = usePortfolio();
 
@@ -26,7 +26,7 @@ const Header = ({home}) => {
                 </ul>
 
                 <p>
-                  {home.Description}
+                  {home}
                 </p> 
               </div>
             </div> 

@@ -6,15 +6,16 @@ import usePortfolio from "../hook/usePortfolio";
 import Layout from "../components/Layout"
 import List from "../components/List";
 import Work from '../components/Work';
+import { works } from "../includes/works"; 
 
-export default function Home({home, works}) {
+export default function Home({home}) { //{home, works}
 
   const {projects} = usePortfolio();
 
   return (
     <Layout
       page="Welcome"
-      home={home[0]}
+      home={home} strapi
     >
 
       <div className="container">
@@ -24,17 +25,15 @@ export default function Home({home, works}) {
           <div className={styles.welcome}>
             <div className={styles.text}>
               <p className="center">
-                Thanks for being here! obviously the goal of a portfolio is to show visitors your knowledge as a developer. 
-                The projects I&apos;ve done throughout this learning process are as important as the portfolio you&apos;re looking at right now.
-                The listed projects have information of interest, including the link to their GitHub repository and some of them have a link
+                Thanks for being here! The listed projects have information of interest, including the link to their GitHub repository and some of them have a link
                 to the app demo, so you can test it.
               </p>
 
-              <p className="center"> I hope you like the 3d images I made. Feel welcome to check out any of the <span>content below!</span></p>
+              <p className="center"> I hope you like the 3d images I made. Feel welcome to <span>check out any of the content below!</span></p>
 
             </div>
             
-            <Image layout='responsive' width={180} height={160} src="/img/welcome.png" alt="Welcome image"/>
+            <Image layout='responsive' width={180} height={160} src="/img/welcome.png" alt="Welcome image" draggable="false"/>
           </div>
         </div>
       </div>
@@ -44,7 +43,7 @@ export default function Home({home, works}) {
           <h3 className={styles.center}>Projects</h3>
             <p className="center">Here is a list of projects I have done as my learning progressed,
               using a variety of technologies to make each project something original.
-            <span> Slide the project to the left or right.</span></p>
+            </p>
         
           <div className="reveal fade-bottom">
             <List
@@ -62,7 +61,7 @@ export default function Home({home, works}) {
         </svg>
         
         <div className="container">
-          <p className={styles.work}>Work</p>
+          <p className={styles.work}>Projects I&apos;ve worked on</p>
           {works.map( work => (
             <Work
               key={work.id}
@@ -79,16 +78,14 @@ export default function Home({home, works}) {
           <div className={styles.grid}>
             
             <div className={styles.down}>
-              <Image layout='responsive' width={180} height={160} src="/img/portfolio.png" alt="About portfolio image"/>
+              <Image layout='responsive' width={180} height={160} src="/img/portfolio.png" alt="About portfolio image" draggable="false"/>
             </div>
             
           
             <div className={styles.up}>
               <div className={styles.text}>
                 <p className="center">
-                  One of the objectives is to give a sample of the knowledge that I have acquired since my first steps in the world of development.
-                  Day after day when I learn new things I take a little time to think about how to update my portfolio, 
-                  since this web page is a graphic sample of the effort and work that I have dedicated to my training as a developer.
+                  One of the objectives of this content is to give a sample of the knowledge that I have acquired since my first steps in the world of development.
                 </p>
 
                 <p className="center">When I have enough time I will incorporate the new learning that I have obtained in this web application.
@@ -112,8 +109,10 @@ export default function Home({home, works}) {
     </Layout>
   )
 }
-
-export async function getServerSideProps() {
+Home.defaultProps = {
+  home: 'A Full Stack Developer specialized in creating applications and web pages taking into account originality, style and above all, a good user experience.'
+}
+/*export async function getServerSideProps() { Removing the backend made in Strapi (for now)
 
 
   const urlHome = `${process.env.API_URL}/homes`;
@@ -135,4 +134,4 @@ export async function getServerSideProps() {
       works
     }
   }
-}
+}*/

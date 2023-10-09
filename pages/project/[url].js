@@ -16,8 +16,9 @@ import Deployment from '../../components/Deployment';
 import Dial from '../../components/Dial';
 import Icon from '../../components/Icon';
 import ToggleButton from '../../components/ToggleButton';
+import projectsJson from '../../includes/projects.json';
 
-const Project = ({project})  => {
+const Project = ({projectJ})  => { //strapi project
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -33,7 +34,7 @@ const Project = ({project})  => {
 
   const {favorites, activetheme} = usePortfolio();
   
-  const {id, name, background, github, Bgithub, deployments, deployment, url, img_1} = project[0];
+  const {id, name, background, github, Bgithub, deployments, deployment, url, img_1} = projectJ;
 
   const NewFavourite = {
     name: name,
@@ -69,7 +70,7 @@ const Project = ({project})  => {
             
           <style jsx>{`
             header {
-              background-image: linear-gradient(to bottom, rgb(0 0 0 / .88), rgb(0 0 0 /.92 )), url(${background.url});
+              background-image: linear-gradient(to bottom, rgb(0 0 0 / .88), rgb(0 0 0 /.92 )), url(${background});
               background-size: cover;
               background-position: center;
               padding: 5rem 0;
@@ -99,7 +100,7 @@ const Project = ({project})  => {
         <main className='container'>
 
           <Details
-            project={project}
+            projectJ={projectJ}
           />
           
         </main>
@@ -198,7 +199,27 @@ const Project = ({project})  => {
   )
 }
 
-export async function getServerSideProps({query: {url}}) { 
+export async function getStaticPaths() {
+  const urls = projectsJson.map((projectClass) => projectClass.url);
+  
+  const paths = urls.map((url) => ({
+    params: { url: url.toString() },
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async (context) => {
+  const projectJ = projectsJson.find((classes) => classes.url == context.params.url);
+  return {
+    props: {
+      projectJ,
+    },
+  };
+};
+/*export async function getServerSideProps({query: {url}}) { strapi
 
   const urlProject = `${process.env.API_URL}/projects?url=${url}`;
   const response = await fetch(urlProject);
@@ -209,6 +230,6 @@ export async function getServerSideProps({query: {url}}) {
       project
     }
   }
-}
+}*/
 
 export default Project

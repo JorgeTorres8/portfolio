@@ -19,19 +19,19 @@ const Work = ({work}) => {
 
             <p className={styles.opinion}>❝ {testimonials}❞ &#8212; <span>{name} of {client}</span></p>
 
-            <Image width={150} height={90} src={image.url} alt={`Logo ${client}`}/>
+            <Image width={130} height={90} src={image} alt={`Logo ${client}`} draggable="false"/> {/*strapi src={image.url}*/}
         </div>
 
         <div className={styles.flex}>
           <svg viewBox="-130 20 200 25">
             <path id="MyPath" fill="none" stroke="var(--orange)"
-                d="m10,45c53,-33 96,3 96,3" />
-            <text fill="var(--color-text-secondary)"><textPath className={styles.curve} href="#MyPath">Scroll Me!</textPath></text>
+                d="m7,45c53,-33 96,3 96,3" />
+            <text fill="var(--color-text-secondary)"><textPath className={styles.curve} href="#MyPath">Scroll Me&#8691;</textPath></text>
           </svg>
 
 
           <div className={styles.wrapper}>
-              <Image layout='responsive' width={100} height={170} src={page.url} alt={`Image ${client} website`}/>
+              <Image layout='responsive' width={100} height={170} src={page} alt={`Image ${client} website`} draggable="false"/> {/*strapi src={page.url}*/}
           </div>
         </div>   
 

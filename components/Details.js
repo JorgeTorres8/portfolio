@@ -1,7 +1,6 @@
 import * as React from 'react';
 import usePortfolio from "../hook/usePortfolio";
 import Image from 'next/image';
-import Button from '@mui/material/Button';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -13,17 +12,17 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '95%',
+    width: '80%',
     height: 'auto',
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
   };
 
-const Details1 = ({project}) => {
+const Details1 = ({projectJ}) => {
 
     const {activetheme} = usePortfolio();
-    const {name, img_1, img_2, description, summary, others} = project[0];
+    const {name, img_1, img_2, description, summary, others} = projectJ;
     const [open, setOpen] = React.useState(false);
     const [show, setShow] = React.useState(false);
     const [openSummary, setOpenSummary] = React.useState(false);
@@ -53,17 +52,17 @@ const Details1 = ({project}) => {
             <div className='reveal fade-right'>   
                 {show ? 
                     <div className={styles.image}>
-                        <Image layout='responsive' width={500} height={270} src={img_1.url} alt={`Image 1 project ${name}`} onClick={handleOpen}/>
+                        <Image layout='responsive' width={500} height={270} src={img_1} alt={`Image 1 project ${name}`} onClick={handleOpen} draggable="false"/>
                     </div>
                     : (
                     <div className={styles.flex}>
-                        <Button 
+                        <button 
                             style={{
                                     boxShadow: activetheme === 'dark' ? "" : "0 0 25px var(--light-blue)",
                                     color: activetheme === 'dark' ? "var(--grey)" : "var(--black)",
                                     backgroundColor: activetheme === 'dark' ? "rgb(34, 49, 63)" : "#cbe1fa",
                                 }} 
-                            className={styles.button} onClick={handleOpen}>ClickMe</Button>
+                            className={styles.button} onClick={handleOpen}>ClickMe</button>
                     </div>
                 )}
             </div>
@@ -80,7 +79,7 @@ const Details1 = ({project}) => {
         >
             <Fade in={open}>
                 <Box sx={style}  className={styles.modal}>
-                    <Image priority="true" layout='responsive' width={500} height={300} src={img_1.url} alt={`Image 1 project ${name}`}/>
+                    <Image priority="true" layout='responsive' width={500} height={300} src={img_1} alt={`Image 1 project ${name}`} draggable="false"/>
                 </Box>
             </Fade>
         </Modal>
@@ -95,17 +94,17 @@ const Details1 = ({project}) => {
                 {showSummary ?
                 <>
                     <div className={styles.image}>
-                        <Image layout='responsive' width={500} height={270} src={img_2.url} alt={`Image 2 project ${name}`} onClick={handleOpenSummary}/>
+                        <Image layout='responsive' width={500} height={270} src={img_2} alt={`Image 2 project ${name}`} onClick={handleOpenSummary} draggable="false"/>
                     </div>
                 </> : (
                     <div className={styles.flex}>
-                        <Button 
+                        <button 
                             style={{
                                 boxShadow: activetheme === 'dark' ? "" : "0 0 25px var(--light-blue)",
                                 color: activetheme === 'dark' ? "var(--grey)" : "var(--black)",
                                 backgroundColor: activetheme === 'dark' ? "rgb(34, 49, 63)" : "#cbe1fa",
                             }} 
-                            className={styles.button} onClick={handleOpenSummary}>ClickMe</Button>
+                            className={styles.button} onClick={handleOpenSummary}>ClickMe</button>
                     </div>
                     
                 )}
@@ -123,7 +122,7 @@ const Details1 = ({project}) => {
         >
             <Fade in={openSummary}>
                 <Box sx={style}  className={styles.modal}>
-                    <Image priority="true" layout='responsive' width={500} height={300} src={img_2.url} alt={`Image 2 project ${name}`}/>
+                    <Image priority="true" layout='responsive' width={500} height={300} src={img_2} alt={`Image 2 project ${name}`} draggable="false"/>
                 </Box>
             </Fade>
         </Modal>
@@ -135,7 +134,7 @@ const Details1 = ({project}) => {
         <div className={styles.project}>
             {others.map(other => (
                 <div key={other.id} className={styles.preview}>
-                    <Image layout='responsive' width={500} height={270} src={other.url} alt={`Preview project ${name}`}/>
+                    <Image layout='responsive' width={500} height={270} src={other.url} alt={`Preview project ${name}`} draggable="false"/>
                 </div>
             ))}
         </div>

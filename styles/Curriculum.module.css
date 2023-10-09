@@ -41,11 +41,6 @@
      0 8px 0 -4px var(--light-blue),
      0 12px 10px -3px var(--light-blue);
 }
-@media(min-width: 768px) {
-    .link{
-        margin-top: 1rem;
-    }
-}
 .link:hover .rocket {
     animation: up 1s linear infinite;
 }

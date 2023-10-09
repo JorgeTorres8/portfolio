@@ -81,7 +81,8 @@ const ProjectPreview = ({project, favourite}) => {
           <CardActionArea>
             <CardMedia
               component="img"
-              image={favourite?.name ? favourite.image.url : image.url}
+              /*image={favourite?.name ? favourite.image.url : image.url}*/
+              image={favourite?.name ? favourite.image : image}
               alt={`favourite?.name ? ${favourite.name} Project image : ${name} Project image `}
               draggable="false"
             />

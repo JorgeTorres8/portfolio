@@ -25,7 +25,7 @@ const Contact = ({contact}) => {
 
             <div className={styles.grid}>
     
-                <Image priority={true} layout='responsive' width={200} height={170} src="/img/contact.png" alt="Contact"/>
+                <Image priority={true} layout='responsive' width={200} height={170} src="/img/contact.png" alt="Contact" draggable="false"/>
                             
                 <div className={styles.text}>
                     <p className="center">
@@ -53,14 +53,14 @@ const Contact = ({contact}) => {
                                 >
                                     <Link href={imgContact.url}>
                                         <a target="_blank">
-                                            <Image width={40} height={35} src={imgContact.img} alt={imgContact.alt}/>
+                                            <Image width={40} height={35} src={imgContact.img} alt={imgContact.alt} draggable="false"/>
                                         </a>
                                     </Link>
                                 </div>
                             ))}
 
                             <div className={styles.gmail} onClick={() => handleGmail()}>
-                                <Image width={40} height={35} src='/img/gmail.png' alt='Gmail Image'/>
+                                <Image width={40} height={35} src='/img/gmail.png' alt='Gmail Image' draggable="false"/>
                             </div>
 
                         </div>
@@ -76,7 +76,8 @@ const Contact = ({contact}) => {
 export async function getServerSideProps() {
 
 
-    const urlContact = `${process.env.API_URL}/contacts`;
+    //const urlContact = `${process.env.API_URL}/contacts`; strapi
+    const urlContact = `${process.env.NEXT_PUBLIC_LOCAL_API_URL}/contacts`;
   
     const [resContact] = await Promise.all([
       fetch(urlContact)

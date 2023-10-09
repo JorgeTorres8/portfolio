@@ -37,3 +37,8 @@
 .item a {
     margin-top: .3rem;
 }
+
+.item p {
+    font-size: 1.8rem;
+    color: var(--black);
+}

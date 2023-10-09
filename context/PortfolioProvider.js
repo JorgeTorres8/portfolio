@@ -19,6 +19,7 @@ const PortfolioProvider = ({children}) => {
     const [destructive, setDestructive] = useState(false);
     const [gmail, setGmail] = useState(false);
     const [value, setValue] = useState('');
+    const [isIndex, setIsIndex] = useState(false);
     const [animation, setAnimation] = useState(false);
     const [activetheme, setActiveTheme] = useState("light");
     const inactivetheme = activetheme  === "light" ? "dark" : "light";
@@ -35,8 +36,6 @@ const PortfolioProvider = ({children}) => {
     
         if (elementTop < windowHeight - elementVisible) {
           reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
         }
       }
     }
@@ -85,7 +84,8 @@ const PortfolioProvider = ({children}) => {
 
     useEffect(() => {
       const count = async () => {
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/lists`
+        //const url = `${process.env.NEXT_PUBLIC_API_URL}/lists`
+        const url = `${process.env.NEXT_PUBLIC_LOCAL_API_URL}/lists`
         const {data} = await axios(url);
         setTotalProjects(data.length);
       }
@@ -95,7 +95,8 @@ const PortfolioProvider = ({children}) => {
     useEffect(() => {
       const consultAPI = async () => {
         setSkeleton(true);
-        const url = `${process.env.NEXT_PUBLIC_API_URL}/lists?_sort=order:ASC&_start=${(page-1)*6}&_limit=6`
+       // const url = `${process.env.NEXT_PUBLIC_API_URL}/lists?_sort=order:ASC&_start=${(page-1)*6}&_limit=6`
+        const url = `${process.env.NEXT_PUBLIC_LOCAL_API_URL}/lists?_start=${(page-1)*6}&_limit=6`
         const {data} = await axios(url);
         setProjects(data);
         setSkeleton(false);
@@ -186,7 +187,9 @@ const PortfolioProvider = ({children}) => {
               animation,
               setActiveTheme,
               inactivetheme,
-              activetheme
+              activetheme,
+              isIndex,
+              setIsIndex
             }}
         >
             {children}

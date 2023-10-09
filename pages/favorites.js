@@ -1,11 +1,12 @@
 import usePortfolio from '../hook/usePortfolio'
+import SwipeIcon from '@mui/icons-material/Swipe';
 import styles from '../styles/Favorites.module.css'
 import Layout from '../components/Layout'
 import ProjectPreview from '../components/ProjectPreview';
 
 const Favorites = () => {
 
-  const {favorites} = usePortfolio();
+  const {favorites,activetheme} = usePortfolio();
   
   return (
     <Layout 
@@ -19,8 +20,15 @@ const Favorites = () => {
 
             <p className="center">Thanks for taking a look at my projects, here are the ones you liked the most. 
               Don&apos;t worry, you won&apos;t lose this information when you leave my portfolio,
-              your favorite projects will still be here!<span> Swipe left on the project to see details, 
-              swipe right to remove the project from your favorite projects list.</span></p>
+              your favorite projects will still be here!</p>
+
+              <div className='swipe-div'>
+                  <p>Swipe project</p>
+                  <SwipeIcon
+                    className='swipe-icon'
+                    sx={{fontSize: 30, color: activetheme === 'dark' && 'var(--white)'}}
+                  />
+              </div>
 
               <div className={styles.grid}>
                 {favorites.map(favourite => (

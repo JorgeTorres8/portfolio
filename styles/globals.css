@@ -135,6 +135,33 @@ img {
   margin: auto;
   text-align: center;
 }
+
+.swipe-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+.swipe-div p {
+  font-size: 2.5rem;
+  font-family: var(--presentation-font);
+}
+.swipe-icon{
+  animation: swipeIcon 2.2s linear infinite;
+}
+@keyframes swipeIcon {
+  0% {
+  }
+
+  50% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+  }
+}
+
 /******************** ANIMATIONS ********************/
 .reveal {
   position: relative;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Pagination from '@mui/material/Pagination'
-import PaginationItem from '@mui/material/PaginationItem';
+import SwipeIcon from '@mui/icons-material/Swipe';
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box';
 import Skeleton from '@mui/material/Skeleton';
@@ -25,6 +25,13 @@ const List = ({projects}) => {
 
   return (
     <>
+      <div className='swipe-div'>
+        <p>Swipe project</p>
+        <SwipeIcon
+          className='swipe-icon'
+          sx={{fontSize: 30, color: activetheme === 'dark' && 'var(--white)'}}
+        />
+      </div>
       <div className={styles.grid}>
         {(skeleton ? Array.from(new Array(6)) : projects).map((item, index) => (
           <div key={index}>

@@ -13,13 +13,12 @@
   transform: scale(.8);
 }
 .toggleButton {
-  border: 2px solid #7c7c7c;
-  background-color: var(--grey);
-  background: linear-gradient(to top, rgba(38, 38, 38, 0.8), #e6e6e6c4 25%, #ffffff 38%, #c5c5c5c4 63%, #f7f7f740 87%, rgba(38, 38, 38, 0.8));
+  border: 2px solid var(--theme-grey);
+  background-color: var(--orange);
 }
 .toggleButtonDark {
-  border: 2px solid var(--white);
-  background-color: rgb(103, 167, 113);;
+  border: 2px solid var(--theme-grey);
+  background-color: var(--blue) ;
   box-shadow: 0px 0px 1px var(--light-blue) inset,
   0px 0px 2px var(--light-blue) inset,
   0px 0px 10px var(--light-blue) inset,

@@ -34,7 +34,7 @@ const Layout = ({children, page, home}) => {
         <meta property="og:site_name" content="Portfolio | Jorge Torres" />
         <meta property="og:title" content="Welcome to my portfolio" />
         <meta property="og:description" content="In this web application you will learn about me and my skills as a web developer. Implementing varieties of sections including the projects carried out in this learning time." />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://jorgetorres.xyz"/>
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/img/readme/portfolio_img.png"/>
         <meta property="og:image:width" content="1280" />
